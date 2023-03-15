@@ -26,4 +26,28 @@ class FizzBuzzTest {
 
         assertEquals(salidaEsperada, salidaReal);
     }
+
+    @Test
+    void alPasarElEntero4Devuelve4ComoString(){
+        String salidaReal = FizzBuzz.jugar(4);
+        String salidaEsperada = "4";
+
+        assertEquals(salidaEsperada, salidaReal);
+    }
+
+    @Test
+    void alPasarElEntero5DevuelveBuzzComoString(){
+        String salidaReal = FizzBuzz.jugar(5);
+        String salidaEsperada = "Buzz";
+
+        assertEquals(salidaEsperada, salidaReal);
+    }
+
+    @Test
+    void alPasarElEntero6DevuelveFizzComoString(){
+        String salidaReal = FizzBuzz.jugar(6);
+        String salidaEsperada = "Fizz";
+
+        assertEquals(salidaEsperada, salidaReal);
+    }
 }
