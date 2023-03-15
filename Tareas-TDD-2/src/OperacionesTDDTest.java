@@ -50,4 +50,12 @@ class OperacionesTDDTest {
 
         assertEquals(resultadoEsperado, resultadoReal);
     }
+
+    @Test
+    void alPasar5y1002ComoStringDevuelve5MuestraUnMensajeDeError(){
+        int resultadoReal = OperacionesTDD.suma("5,1002");
+        int resultadoEsperado = 5;
+
+        assertEquals(resultadoEsperado, resultadoReal);
+    }
 }

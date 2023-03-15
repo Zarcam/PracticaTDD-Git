@@ -21,19 +21,24 @@ public class OperacionesTDD {
             if(i != j){
                 valoresASumar.add(Integer.parseInt(valores.substring(i, j)));
             }
+            i = j;
         }
 
         //Buscamos valores negativos
         for(Integer i : valoresASumar){
             if(i < 0){
-                System.out.println("Numero negativo no permitido");
+                System.err.println("Numero negativo no permitido");
                 return -1;
             }
         }
 
         int suma = 0;
         for(Integer i : valoresASumar){
-            suma += i;
+            if(i > 1000){
+                System.err.println("Número superior a 1000 ignorado");
+            }else {
+                suma += i;
+            }
         }
         return suma;
     }
