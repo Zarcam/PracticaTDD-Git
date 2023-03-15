@@ -18,4 +18,20 @@ class OperacionesTDDTest {
 
         assertEquals(resultadoEsperado, resultadoReal);
     }
+
+    @Test
+    void alPasar1y2ComoStringDevuelve3(){
+        int resultadoReal = OperacionesTDD.suma("1,2");
+        int resultadoEsperado = 3;
+
+        assertEquals(resultadoEsperado, resultadoReal);
+    }
+
+    @Test
+    void alPasar1y1y2ComoStringDevuelve4(){
+        int resultadoReal = OperacionesTDD.suma("1,1,2");
+        int resultadoEsperado = 4;
+
+        assertEquals(resultadoEsperado, resultadoReal);
+    }
 }
