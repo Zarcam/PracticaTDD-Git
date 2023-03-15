@@ -42,4 +42,12 @@ class OperacionesTDDTest {
 
         assertEquals(resultadoEsperado, resultadoReal);
     }
+
+    @Test
+    void alPasar1y2y2NegativoComoStringDevuelve1NegativoYMuestraUnMensajeDeError(){
+        int resultadoReal = OperacionesTDD.suma("1,2,-2");
+        int resultadoEsperado = -1;
+
+        assertEquals(resultadoEsperado, resultadoReal);
+    }
 }
