@@ -4,6 +4,10 @@ public class OperacionesTDD {
             return 0;
         }
 
+        if(valores.charAt(valores.length()-1) == ','){
+            return -1;
+        }
+
         int suma = 0;
         for(int i = 0; i < valores.length(); i++){
             if(i%2==0){
